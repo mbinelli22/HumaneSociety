@@ -6,14 +6,24 @@ using System.Threading.Tasks;
 
 namespace HumaneSociety
 {
-    public class Rabbits
+    class Rabbits : Animal
     {
         //member variables
 
         //constructor
-        public Rabbits()
+        public Rabbits(string Name, string Breed, string Gender, int Age, int Weight, int RoomNumber, bool VacinationStatus, double FoodAmount, bool AdoptionStatus)
         {
-
+            name = Name;
+            type = "Rabbit";
+            breed = Breed;
+            gender = Gender;
+            age = Age;
+            weight = Weight;
+            roomNumber = RoomNumber;
+            vacinationStatus = VacinationStatus;
+            foodType = "Rabbit Food";
+            foodAmount = FoodAmount;
+            adoptionStatus = AdoptionStatus;
         }
 
         //member methods

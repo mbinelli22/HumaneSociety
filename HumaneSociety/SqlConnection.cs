@@ -10,54 +10,35 @@ using System.Threading.Tasks;
 
 namespace HumaneSociety
 {
-    public sealed class SqlConnection /*: DbConnection, ICloneable*/
+    public sealed class SqlConnection
     {
-        //member variables
-        string connectionString;
+        private string v;
+        
 
+
+        //member variables
 
         //constructor
-        public SqlConnection(/*string connectionString*/)
+        public SqlConnection(string v)
         {
-            //this.connectionString = connectionString;
+            this.v = v;
+            SqlConnection myConnection = new SqlConnection("user id = username;" + "password = password;server=serverurl;" + "Trusted_connection=yes;" + "database=database; " + "connection timeout = 30");
+            server = tcp:localhost, 9999;
+
+            try
+            {
+                myConnection.Open();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
         }
 
-        //member variables
-        //public override string ConnectionString { get; set; }
 
+        //member methods
+        private static void
 
-
-        //private static void CreateCommand(string queryString, string connectionString)
-        //{
-        //    using (SqlConnection connection = new SqlConnection(connectionString))
-        //    {
-        //        SqlCommand command = new SqlCommand(queryString, connection);
-        //        command.Connection.Open();
-        //        command.ExecuteNonQuery();
-        //    }
-        //}
-
-
-        //private static void OpenSqlConnection()
-        //{
-        //    string connectionString = GetConnectionString();
-        //    using (SqlConnection connection = new SqlConnection(connectionString))
-        //    {
-        //        connection.ConnectionString = connectionString;
-        //        connection.Open();
-        //        Console.WriteLine("State: {0}", connection.State);
-        //        Console.WriteLine("ConnectionString: {0}", connection.ConnectionString);
-        //    }
-        //}
-
-        //private static string GetConnectionString()
-        //{
-        //    return "Data Source=";
-        //}
-
-        //public object Clone()
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
