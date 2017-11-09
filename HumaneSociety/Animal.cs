@@ -27,6 +27,7 @@ namespace HumaneSociety
 
         }
 
+        public abstract string AnimalArray();
 
     }
 }

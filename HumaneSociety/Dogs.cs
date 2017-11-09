@@ -28,5 +28,22 @@ namespace HumaneSociety
         }
 
         //member methods
+        public override string AnimalArray()
+        {
+            throw new NotImplementedException();
+            string[] dogArray = new string[10];
+            dogArray[0] = name;
+            dogArray[1] = type;
+            dogArray[2] = breed;
+            dogArray[3] = gender;
+            dogArray[4] = age;
+            dogArray[5] = weight;
+            dogArray[6] = roomNumber;
+            dogArray[7] = vacinationStatus;
+            dogArray[8] = foodType;
+            dogArray[9] = foodAmount;
+            dogArray[10] = adoptionStatus;
+
+        }
     }
 }

@@ -23,6 +23,7 @@ namespace HumaneSociety
             Console.WriteLine("Please enter the following information: Animal Name, Type, Breed, Gender, Age, Weight, Room #, Vacination Status, Food Type, Food Amount, Adoption Status.");
             string animalInfo = Console.ReadLine();
 
+
         }
 
         public void FindRoomNumberForAnimal()
