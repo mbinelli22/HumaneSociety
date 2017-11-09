@@ -9,6 +9,7 @@ namespace HumaneSociety
     public class Employee
     {
         //member variables
+        public Employee employee;
 
         //constructor
         public Employee()
@@ -49,6 +50,20 @@ namespace HumaneSociety
 
         }
 
+        public void ChangeAnimalVacinationStatus()
+        {
+
+        }
+
+        public void FeedAnimal()
+        {
+
+        }
+
+        public void SearchForAnimal()
+        {
+
+        }
         
 
 
